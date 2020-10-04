@@ -22,7 +22,6 @@ public final class TimedRecorder: BaseRecorder {
         os_log("Dispatching start in \(String(describing: self.startAfter))")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + startAfter) {
             super.start()
-            print(self.state)
             if self.state == .recording {
                 os_log("Dispatching stop in \(String(describing: self.stopAfter))")
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + self.stopAfter) {
