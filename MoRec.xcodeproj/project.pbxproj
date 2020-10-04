@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7349A9E2529F2D500207DD3 /* TimedRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7349A9D2529F2D500207DD3 /* TimedRecorder.swift */; };
 		A7A5A38A2528D49C00CAE1E6 /* MoRec WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A7A5A3892528D49C00CAE1E6 /* MoRec WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A7A5A38F2528D49C00CAE1E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A38E2528D49C00CAE1E6 /* Assets.xcassets */; };
 		A7A5A3962528D49C00CAE1E6 /* MoRec WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7A5A3952528D49C00CAE1E6 /* MoRec WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -17,6 +18,8 @@
 		A7A5A3A32528D49C00CAE1E6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5A3A22528D49C00CAE1E6 /* ComplicationController.swift */; };
 		A7A5A3A52528D49D00CAE1E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A3A42528D49D00CAE1E6 /* Assets.xcassets */; };
 		A7A5A3A82528D49D00CAE1E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A5A3A72528D49D00CAE1E6 /* Preview Assets.xcassets */; };
+		A7A5A3BC2528D4C800CAE1E6 /* BaseRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5A3BB2528D4C800CAE1E6 /* BaseRecorder.swift */; };
+		A7CE8AA22529E33000F9E09A /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE8AA12529E33000F9E09A /* Motion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A7349A9D2529F2D500207DD3 /* TimedRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedRecorder.swift; sourceTree = "<group>"; };
 		A7A5A3852528D49C00CAE1E6 /* MoRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A5A3892528D49C00CAE1E6 /* MoRec WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoRec WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A5A38E2528D49C00CAE1E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		A7A5A3A72528D49D00CAE1E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7A5A3A92528D49D00CAE1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A5A3AA2528D49D00CAE1E6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A7A5A3BB2528D4C800CAE1E6 /* BaseRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRecorder.swift; sourceTree = "<group>"; };
+		A7CE8AA12529E33000F9E09A /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 				A7A5A38D2528D49C00CAE1E6 /* MoRec WatchKit App */,
 				A7A5A3992528D49C00CAE1E6 /* MoRec WatchKit Extension */,
 				A7A5A3862528D49C00CAE1E6 /* Products */,
+				A7A5A3C52528D81900CAE1E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,7 @@
 		A7A5A3992528D49C00CAE1E6 /* MoRec WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A7CE8AA02529E30300F9E09A /* Model */,
 				A7A5A39A2528D49C00CAE1E6 /* MoRecApp.swift */,
 				A7A5A39C2528D49C00CAE1E6 /* ContentView.swift */,
 				A7A5A39E2528D49C00CAE1E6 /* NotificationController.swift */,
@@ -129,6 +137,8 @@
 				A7A5A3A92528D49D00CAE1E6 /* Info.plist */,
 				A7A5A3AA2528D49D00CAE1E6 /* PushNotificationPayload.apns */,
 				A7A5A3A62528D49D00CAE1E6 /* Preview Content */,
+				A7A5A3BB2528D4C800CAE1E6 /* BaseRecorder.swift */,
+				A7349A9D2529F2D500207DD3 /* TimedRecorder.swift */,
 			);
 			path = "MoRec WatchKit Extension";
 			sourceTree = "<group>";
@@ -139,6 +149,21 @@
 				A7A5A3A72528D49D00CAE1E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7A5A3C52528D81900CAE1E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7CE8AA02529E30300F9E09A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7CE8AA12529E33000F9E09A /* Motion.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +182,8 @@
 				A7A5A38C2528D49C00CAE1E6 /* PBXTargetDependency */,
 			);
 			name = MoRec;
+			packageProductDependencies = (
+			);
 			productName = MoRec;
 			productReference = A7A5A3852528D49C00CAE1E6 /* MoRec.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -191,6 +218,8 @@
 			dependencies = (
 			);
 			name = "MoRec WatchKit Extension";
+			packageProductDependencies = (
+			);
 			productName = "MoRec WatchKit Extension";
 			productReference = A7A5A3952528D49C00CAE1E6 /* MoRec WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -224,6 +253,8 @@
 				Base,
 			);
 			mainGroup = A7A5A37E2528D49B00CAE1E6;
+			packageReferences = (
+			);
 			productRefGroup = A7A5A3862528D49C00CAE1E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,10 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A5A3BC2528D4C800CAE1E6 /* BaseRecorder.swift in Sources */,
 				A7A5A39F2528D49C00CAE1E6 /* NotificationController.swift in Sources */,
 				A7A5A39D2528D49C00CAE1E6 /* ContentView.swift in Sources */,
 				A7A5A3A32528D49C00CAE1E6 /* ComplicationController.swift in Sources */,
+				A7349A9E2529F2D500207DD3 /* TimedRecorder.swift in Sources */,
 				A7A5A39B2528D49C00CAE1E6 /* MoRecApp.swift in Sources */,
+				A7CE8AA22529E33000F9E09A /* Motion.swift in Sources */,
 				A7A5A3A12528D49C00CAE1E6 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

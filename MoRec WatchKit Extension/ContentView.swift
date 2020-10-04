@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var recorder = TimedRecorder(startAfter: .seconds(2), recordFor: .seconds(5))
+
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack {
+            Text("State: \(recorder.state == .idle ? "Idle" : "Recording")")
+            Text("Recorded: \(recorder.recordedMotionEvents)")
+            Button {
+                recorder.start()
+            }
+            label: {
+                Text("Start")
+            }
+        }
     }
 }
 
