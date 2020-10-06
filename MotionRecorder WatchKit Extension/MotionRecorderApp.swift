@@ -1,14 +1,14 @@
 //
-//  MoRecApp.swift
-//  MoRec WatchKit Extension
+//  MotionRecorderApp.swift
+//  MotionRecorder WatchKit Extension
 //
-//  Created by Oliver Epper on 03.10.20.
+//  Created by Oliver Epper on 06.10.20.
 //
 
 import SwiftUI
 
 @main
-struct MoRecApp: App {
+struct MotionRecorderApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {

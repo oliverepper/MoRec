@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7B9966E252C7F1800F194B2 /* MotionRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9966D252C7F1800F194B2 /* MotionRecorderApp.swift */; };
+		A7B99670252C7F1800F194B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9966F252C7F1800F194B2 /* ContentView.swift */; };
+		A7B99672252C7F1900F194B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B99671252C7F1900F194B2 /* Assets.xcassets */; };
+		A7B99675252C7F1900F194B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B99674252C7F1900F194B2 /* Preview Assets.xcassets */; };
+		A7B9967A252C7F1900F194B2 /* MotionRecorder WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A7B99679252C7F1900F194B2 /* MotionRecorder WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7B9967F252C7F1900F194B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B9967E252C7F1900F194B2 /* Assets.xcassets */; };
+		A7B99686252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7B99685252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7B9968B252C7F1900F194B2 /* MotionRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9968A252C7F1900F194B2 /* MotionRecorderApp.swift */; };
+		A7B9968D252C7F1900F194B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9968C252C7F1900F194B2 /* ContentView.swift */; };
+		A7B9968F252C7F1900F194B2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9968E252C7F1900F194B2 /* NotificationController.swift */; };
+		A7B99691252C7F1900F194B2 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B99690252C7F1900F194B2 /* NotificationView.swift */; };
+		A7B99693252C7F1900F194B2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B99692252C7F1900F194B2 /* ComplicationController.swift */; };
+		A7B99695252C7F1A00F194B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B99694252C7F1A00F194B2 /* Assets.xcassets */; };
+		A7B99698252C7F1A00F194B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B99697252C7F1A00F194B2 /* Preview Assets.xcassets */; };
+		A7B996AE252C7F2D00F194B2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B996AD252C7F2D00F194B2 /* HealthKit.framework */; };
+		A7B996B3252C7F6600F194B2 /* BaseRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B996B2252C7F6600F194B2 /* BaseRecorder.swift */; };
+		A7B996B9252C7F9900F194B2 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B996B8252C7F9900F194B2 /* Motion.swift */; };
+		A7B996C1252C7FCF00F194B2 /* TimedRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B996C0252C7FCF00F194B2 /* TimedRecorder.swift */; };
+		A7B996C6252C7FF200F194B2 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B996C5252C7FF200F194B2 /* WorkoutManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7B9967B252C7F1900F194B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B99662252C7F1800F194B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7B99678252C7F1900F194B2;
+			remoteInfo = "MotionRecorder WatchKit App";
+		};
+		A7B99687252C7F1900F194B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B99662252C7F1800F194B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7B99684252C7F1900F194B2;
+			remoteInfo = "MotionRecorder WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7B996A0252C7F1A00F194B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7B99686252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B996A4252C7F1A00F194B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A7B9967A252C7F1900F194B2 /* MotionRecorder WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A7B9966A252C7F1800F194B2 /* MotionRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B9966D252C7F1800F194B2 /* MotionRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionRecorderApp.swift; sourceTree = "<group>"; };
+		A7B9966F252C7F1800F194B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7B99671252C7F1900F194B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B99674252C7F1900F194B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7B99676252C7F1900F194B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B99679252C7F1900F194B2 /* MotionRecorder WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MotionRecorder WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B9967E252C7F1900F194B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B99680252C7F1900F194B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B99685252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MotionRecorder WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B9968A252C7F1900F194B2 /* MotionRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionRecorderApp.swift; sourceTree = "<group>"; };
+		A7B9968C252C7F1900F194B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7B9968E252C7F1900F194B2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A7B99690252C7F1900F194B2 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A7B99692252C7F1900F194B2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A7B99694252C7F1A00F194B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B99697252C7F1A00F194B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7B99699252C7F1A00F194B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B9969A252C7F1A00F194B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A7B996AB252C7F2D00F194B2 /* MotionRecorder WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MotionRecorder WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A7B996AD252C7F2D00F194B2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		A7B996B2252C7F6600F194B2 /* BaseRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRecorder.swift; sourceTree = "<group>"; };
+		A7B996B8252C7F9900F194B2 /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		A7B996C0252C7FCF00F194B2 /* TimedRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedRecorder.swift; sourceTree = "<group>"; };
+		A7B996C5252C7FF200F194B2 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7B99667252C7F1800F194B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B99682252C7F1900F194B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B996AE252C7F2D00F194B2 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7B99661252C7F1800F194B2 = {
+			isa = PBXGroup;
+			children = (
+				A7B996B7252C7F8500F194B2 /* Model */,
+				A7B9966C252C7F1800F194B2 /* MotionRecorder */,
+				A7B9967D252C7F1900F194B2 /* MotionRecorder WatchKit App */,
+				A7B99689252C7F1900F194B2 /* MotionRecorder WatchKit Extension */,
+				A7B9966B252C7F1800F194B2 /* Products */,
+				A7B996AC252C7F2D00F194B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7B9966B252C7F1800F194B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9966A252C7F1800F194B2 /* MotionRecorder.app */,
+				A7B99679252C7F1900F194B2 /* MotionRecorder WatchKit App.app */,
+				A7B99685252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7B9966C252C7F1800F194B2 /* MotionRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9966D252C7F1800F194B2 /* MotionRecorderApp.swift */,
+				A7B9966F252C7F1800F194B2 /* ContentView.swift */,
+				A7B99671252C7F1900F194B2 /* Assets.xcassets */,
+				A7B99676252C7F1900F194B2 /* Info.plist */,
+				A7B99673252C7F1900F194B2 /* Preview Content */,
+			);
+			path = MotionRecorder;
+			sourceTree = "<group>";
+		};
+		A7B99673252C7F1900F194B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7B99674252C7F1900F194B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7B9967D252C7F1900F194B2 /* MotionRecorder WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9967E252C7F1900F194B2 /* Assets.xcassets */,
+				A7B99680252C7F1900F194B2 /* Info.plist */,
+			);
+			path = "MotionRecorder WatchKit App";
+			sourceTree = "<group>";
+		};
+		A7B99689252C7F1900F194B2 /* MotionRecorder WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7B996AB252C7F2D00F194B2 /* MotionRecorder WatchKit Extension.entitlements */,
+				A7B9968A252C7F1900F194B2 /* MotionRecorderApp.swift */,
+				A7B9968C252C7F1900F194B2 /* ContentView.swift */,
+				A7B9968E252C7F1900F194B2 /* NotificationController.swift */,
+				A7B99690252C7F1900F194B2 /* NotificationView.swift */,
+				A7B99692252C7F1900F194B2 /* ComplicationController.swift */,
+				A7B99694252C7F1A00F194B2 /* Assets.xcassets */,
+				A7B99699252C7F1A00F194B2 /* Info.plist */,
+				A7B9969A252C7F1A00F194B2 /* PushNotificationPayload.apns */,
+				A7B99696252C7F1A00F194B2 /* Preview Content */,
+				A7B996B2252C7F6600F194B2 /* BaseRecorder.swift */,
+				A7B996C0252C7FCF00F194B2 /* TimedRecorder.swift */,
+				A7B996C5252C7FF200F194B2 /* WorkoutManager.swift */,
+			);
+			path = "MotionRecorder WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A7B99696252C7F1A00F194B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7B99697252C7F1A00F194B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7B996AC252C7F2D00F194B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B996AD252C7F2D00F194B2 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7B996B7252C7F8500F194B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7B996B8252C7F9900F194B2 /* Motion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7B99669252C7F1800F194B2 /* MotionRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B996A5252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder" */;
+			buildPhases = (
+				A7B99666252C7F1800F194B2 /* Sources */,
+				A7B99667252C7F1800F194B2 /* Frameworks */,
+				A7B99668252C7F1800F194B2 /* Resources */,
+				A7B996A4252C7F1A00F194B2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7B9967C252C7F1900F194B2 /* PBXTargetDependency */,
+			);
+			name = MotionRecorder;
+			productName = MotionRecorder;
+			productReference = A7B9966A252C7F1800F194B2 /* MotionRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7B99678252C7F1900F194B2 /* MotionRecorder WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B996A1252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder WatchKit App" */;
+			buildPhases = (
+				A7B99677252C7F1900F194B2 /* Resources */,
+				A7B996A0252C7F1A00F194B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7B99688252C7F1900F194B2 /* PBXTargetDependency */,
+			);
+			name = "MotionRecorder WatchKit App";
+			productName = "MotionRecorder WatchKit App";
+			productReference = A7B99679252C7F1900F194B2 /* MotionRecorder WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A7B99684252C7F1900F194B2 /* MotionRecorder WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B9969D252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder WatchKit Extension" */;
+			buildPhases = (
+				A7B99681252C7F1900F194B2 /* Sources */,
+				A7B99682252C7F1900F194B2 /* Frameworks */,
+				A7B99683252C7F1900F194B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MotionRecorder WatchKit Extension";
+			productName = "MotionRecorder WatchKit Extension";
+			productReference = A7B99685252C7F1900F194B2 /* MotionRecorder WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7B99662252C7F1800F194B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A7B99669252C7F1800F194B2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A7B99678252C7F1900F194B2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A7B99684252C7F1900F194B2 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = A7B99665252C7F1800F194B2 /* Build configuration list for PBXProject "MotionRecorder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7B99661252C7F1800F194B2;
+			productRefGroup = A7B9966B252C7F1800F194B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7B99669252C7F1800F194B2 /* MotionRecorder */,
+				A7B99678252C7F1900F194B2 /* MotionRecorder WatchKit App */,
+				A7B99684252C7F1900F194B2 /* MotionRecorder WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7B99668252C7F1800F194B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B99675252C7F1900F194B2 /* Preview Assets.xcassets in Resources */,
+				A7B99672252C7F1900F194B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B99677252C7F1900F194B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B9967F252C7F1900F194B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B99683252C7F1900F194B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B99698252C7F1A00F194B2 /* Preview Assets.xcassets in Resources */,
+				A7B99695252C7F1A00F194B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7B99666252C7F1800F194B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B99670252C7F1800F194B2 /* ContentView.swift in Sources */,
+				A7B9966E252C7F1800F194B2 /* MotionRecorderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B99681252C7F1900F194B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B996B3252C7F6600F194B2 /* BaseRecorder.swift in Sources */,
+				A7B9968F252C7F1900F194B2 /* NotificationController.swift in Sources */,
+				A7B996C6252C7FF200F194B2 /* WorkoutManager.swift in Sources */,
+				A7B9968D252C7F1900F194B2 /* ContentView.swift in Sources */,
+				A7B99693252C7F1900F194B2 /* ComplicationController.swift in Sources */,
+				A7B9968B252C7F1900F194B2 /* MotionRecorderApp.swift in Sources */,
+				A7B996B9252C7F9900F194B2 /* Motion.swift in Sources */,
+				A7B99691252C7F1900F194B2 /* NotificationView.swift in Sources */,
+				A7B996C1252C7FCF00F194B2 /* TimedRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7B9967C252C7F1900F194B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7B99678252C7F1900F194B2 /* MotionRecorder WatchKit App */;
+			targetProxy = A7B9967B252C7F1900F194B2 /* PBXContainerItemProxy */;
+		};
+		A7B99688252C7F1900F194B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7B99684252C7F1900F194B2 /* MotionRecorder WatchKit Extension */;
+			targetProxy = A7B99687252C7F1900F194B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7B9969B252C7F1A00F194B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7B9969C252C7F1A00F194B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A7B9969E252C7F1A00F194B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MotionRecorder WatchKit Extension/MotionRecorder WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionRecorder WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MotionRecorder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		A7B9969F252C7F1A00F194B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MotionRecorder WatchKit Extension/MotionRecorder WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionRecorder WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MotionRecorder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		A7B996A2252C7F1A00F194B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				IBSC_MODULE = MotionRecorder_WatchKit_Extension;
+				INFOPLIST_FILE = "MotionRecorder WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		A7B996A3252C7F1A00F194B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				IBSC_MODULE = MotionRecorder_WatchKit_Extension;
+				INFOPLIST_FILE = "MotionRecorder WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		A7B996A6252C7F1A00F194B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionRecorder/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MotionRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7B996A7252C7F1A00F194B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionRecorder/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MotionRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.MotionRecorder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7B99665252C7F1800F194B2 /* Build configuration list for PBXProject "MotionRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B9969B252C7F1A00F194B2 /* Debug */,
+				A7B9969C252C7F1A00F194B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B9969D252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B9969E252C7F1A00F194B2 /* Debug */,
+				A7B9969F252C7F1A00F194B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B996A1252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B996A2252C7F1A00F194B2 /* Debug */,
+				A7B996A3252C7F1A00F194B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B996A5252C7F1A00F194B2 /* Build configuration list for PBXNativeTarget "MotionRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B996A6252C7F1A00F194B2 /* Debug */,
+				A7B996A7252C7F1A00F194B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7B99662252C7F1800F194B2 /* Project object */;
+}

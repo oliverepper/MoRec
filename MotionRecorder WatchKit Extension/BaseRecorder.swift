@@ -57,6 +57,7 @@ public class BaseRecorder: ObservableObject {
         os_log("Reset recording")
         self.firstTimestamp = nil
         self.recordedMotionEvents = 0
+        self.memoryBuffer.removeAll()
     }
 
     private func handle(_ deviceMotion: CMDeviceMotion) {

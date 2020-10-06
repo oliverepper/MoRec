@@ -1,8 +1,8 @@
 //
 //  NotificationView.swift
-//  MoRec WatchKit Extension
+//  MotionRecorder WatchKit Extension
 //
-//  Created by Oliver Epper on 03.10.20.
+//  Created by Oliver Epper on 06.10.20.
 //
 
 import SwiftUI
