@@ -1,6 +1,8 @@
 # MoRec
 MotionRecorder for Apple Watch
 
+Record wrist movement as possible input for CreateML.
+
 Example Debug Output:
 
 ```
