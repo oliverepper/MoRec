@@ -27,8 +27,8 @@ public final class TimedRecorder: BaseRecorder {
             if self.state == .recording {
                 os_log("Dispatching stop in \(String(describing: self.stopAfter))")
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + self.stopAfter) {
-                    self.workoutManager.endWorkout()
                     self.stop()
+                    self.workoutManager.endWorkout()
                 }
             } else {
                 self.workoutManager.endWorkout()

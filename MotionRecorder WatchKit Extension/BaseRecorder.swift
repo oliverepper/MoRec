@@ -16,7 +16,7 @@ enum RecorderState {
 
 public class BaseRecorder: ObservableObject {
     @Published var recordedMotionEvents = 0
-    @Published var samplesPerSecond = 5.0
+    @Published var samplesPerSecond = 50.0
     @Published var state = RecorderState.idle
 
     private var motionManager = CMMotionManager()
