@@ -2,6 +2,7 @@
 MotionRecorder for Apple Watch
 
 Record wrist movement as possible input for CreateML.
+Inspiration: https://heartbeat.fritz.ai/introduction-to-apple-watchkit-with-core-motion-tracking-jumping-jacks-259ee80d1210
 
 Example Debug Output:
 
