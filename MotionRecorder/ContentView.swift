@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var receiver = Receiver()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Movements...")
+            Diagram(motions: $receiver.motions)
+            List(receiver.motions, id:\.time) { motion in
+                Text(motion.acceleration.x.debugDescription)
+            }
+        }
     }
 }
 

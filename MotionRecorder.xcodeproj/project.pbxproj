@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7620FEF252C8A5C003EEA3E /* Transmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620FEE252C8A5C003EEA3E /* Transmitter.swift */; };
+		A7620FF4252C8B9E003EEA3E /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620FF3252C8B9E003EEA3E /* Receiver.swift */; };
+		A7620FF8252C8CDC003EEA3E /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B996B8252C7F9900F194B2 /* Motion.swift */; };
+		A7620FFD252C8D4A003EEA3E /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620FFC252C8D4A003EEA3E /* DiagramView.swift */; };
+		A77EC127252C9B1C00474BAA /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EC126252C9B1C00474BAA /* Diagram.swift */; };
 		A7B9966E252C7F1800F194B2 /* MotionRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9966D252C7F1800F194B2 /* MotionRecorderApp.swift */; };
 		A7B99670252C7F1800F194B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B9966F252C7F1800F194B2 /* ContentView.swift */; };
 		A7B99672252C7F1900F194B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B99671252C7F1900F194B2 /* Assets.xcassets */; };
@@ -71,6 +76,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A7620FEE252C8A5C003EEA3E /* Transmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transmitter.swift; sourceTree = "<group>"; };
+		A7620FF3252C8B9E003EEA3E /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		A7620FFC252C8D4A003EEA3E /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
+		A77EC126252C9B1C00474BAA /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
 		A7B9966A252C7F1800F194B2 /* MotionRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B9966D252C7F1800F194B2 /* MotionRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionRecorderApp.swift; sourceTree = "<group>"; };
 		A7B9966F252C7F1800F194B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +156,9 @@
 				A7B99671252C7F1900F194B2 /* Assets.xcassets */,
 				A7B99676252C7F1900F194B2 /* Info.plist */,
 				A7B99673252C7F1900F194B2 /* Preview Content */,
+				A7620FF3252C8B9E003EEA3E /* Receiver.swift */,
+				A7620FFC252C8D4A003EEA3E /* DiagramView.swift */,
+				A77EC126252C9B1C00474BAA /* Diagram.swift */,
 			);
 			path = MotionRecorder;
 			sourceTree = "<group>";
@@ -184,6 +196,7 @@
 				A7B996B2252C7F6600F194B2 /* BaseRecorder.swift */,
 				A7B996C0252C7FCF00F194B2 /* TimedRecorder.swift */,
 				A7B996C5252C7FF200F194B2 /* WorkoutManager.swift */,
+				A7620FEE252C8A5C003EEA3E /* Transmitter.swift */,
 			);
 			path = "MotionRecorder WatchKit Extension";
 			sourceTree = "<group>";
@@ -342,8 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7620FF4252C8B9E003EEA3E /* Receiver.swift in Sources */,
+				A7620FF8252C8CDC003EEA3E /* Motion.swift in Sources */,
+				A7620FFD252C8D4A003EEA3E /* DiagramView.swift in Sources */,
 				A7B99670252C7F1800F194B2 /* ContentView.swift in Sources */,
 				A7B9966E252C7F1800F194B2 /* MotionRecorderApp.swift in Sources */,
+				A77EC127252C9B1C00474BAA /* Diagram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7B996B3252C7F6600F194B2 /* BaseRecorder.swift in Sources */,
+				A7620FEF252C8A5C003EEA3E /* Transmitter.swift in Sources */,
 				A7B9968F252C7F1900F194B2 /* NotificationController.swift in Sources */,
 				A7B996C6252C7FF200F194B2 /* WorkoutManager.swift in Sources */,
 				A7B9968D252C7F1900F194B2 /* ContentView.swift in Sources */,

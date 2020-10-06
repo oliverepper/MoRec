@@ -20,6 +20,7 @@ public class BaseRecorder: ObservableObject {
     @Published var state = RecorderState.idle
 
     private var motionManager = CMMotionManager()
+    private var transmitter = Transmitter()
     private var firstTimestamp: TimeInterval?
     private var memoryBuffer = Array<Motion>()
     
@@ -94,6 +95,7 @@ public class BaseRecorder: ObservableObject {
     private func logMovement() {
         let data = try? JSONEncoder().encode(memoryBuffer)
         if let data = data {
+            transmitter.send(data)
             print(String(data: data, encoding: .utf8) ?? "")
         }
     }
