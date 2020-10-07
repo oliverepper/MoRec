@@ -28,9 +28,9 @@ class DiagramView: UIView {
     let height = frame.size.height
     let y0 = height/2.0
     
-    var maximum = 0.0
+    var maximum: CGFloat = 0.0
     for data in dataArray {
-        maximum = max(maximum, abs(data.acceleration.x))
+      maximum = max(maximum, abs(value(for: data)))
     }
     
     let bezierPath = UIBezierPath()
@@ -42,7 +42,7 @@ class DiagramView: UIView {
     }
     
     let scale = height / (CGFloat(maximum) * 2.0)
-    let y = y0 + CGFloat(firstPoint.acceleration.x) * scale
+    let y = y0 + value(for: firstPoint) * scale
     bezierPath.move(to: CGPoint(x: 0, y: y))
     
     let totalTime = lastPoint.time - firstPoint.time
@@ -53,7 +53,7 @@ class DiagramView: UIView {
     for dataPoint in dataArray {
       let timeDiff = dataPoint.time - firstPoint.time
       let x = CGFloat(timeDiff / totalTime) * width
-        let y = y0 + CGFloat(dataPoint.acceleration.x) * scale
+      let y = y0 + value(for: dataPoint) * scale
       bezierPath.addLine(to: CGPoint(x: x, y: y))
     }
     
@@ -71,6 +71,13 @@ class DiagramView: UIView {
     UIColor.gray.setStroke()
     zeroPath.lineWidth = 1
     zeroPath.stroke()
+  }
+    
+  func value(for motion: Motion) -> CGFloat {
+    return CGFloat(motion.acceleration.x * motion.gravity.x
+                    + motion.acceleration.y * motion.gravity.y
+                    + motion.acceleration.z * motion.gravity.z
+    )
   }
   
   func drawVerticalLine(at position: CGFloat, width: CGFloat, height: CGFloat) {
