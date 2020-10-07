@@ -66,14 +66,6 @@ public class BaseRecorder: ObservableObject {
             firstTimestamp = deviceMotion.timestamp
         }
         let timediff = deviceMotion.timestamp - firstTimestamp!
-        
-        let attitude = Attitude(roll: deviceMotion.attitude.roll,
-                                pitch: deviceMotion.attitude.pitch,
-                                yaw: deviceMotion.attitude.yaw)
-
-        let rotationRate = RotationRate(x: deviceMotion.rotationRate.x,
-                                        y: deviceMotion.rotationRate.y,
-                                        z: deviceMotion.rotationRate.z)
 
         let gravity = Gravity(x: deviceMotion.gravity.x,
                               y: deviceMotion.gravity.y,
@@ -83,7 +75,7 @@ public class BaseRecorder: ObservableObject {
                                  y: deviceMotion.userAcceleration.y,
                                  z: deviceMotion.userAcceleration.z)
 
-        let motion = Motion(time: timediff, attitude: attitude, rotationRate: rotationRate, gravity: gravity, acceleration: acceleration)
+        let motion = Motion(time: timediff, gravity: gravity, acceleration: acceleration)
 
         os_log("Handle Device Motion for timestamp: %@", String(describing: motion.time))
         memoryBuffer.append(motion)
