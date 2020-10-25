@@ -14,8 +14,10 @@ final class Transmitter: NSObject {
 
     override init() {
         super.init()
-        session.delegate = self
-        session.activate()
+        if (WCSession.isSupported()) {
+            session.delegate = self
+            session.activate()
+        }
     }
 
     func send(_ jsonData: Data) {

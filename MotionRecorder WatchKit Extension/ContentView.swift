@@ -15,7 +15,7 @@ struct ContentView: View {
             recorder.start()
         }
         label: {
-            Text("Start")
+            Text("Start...")
         }
     }
 }

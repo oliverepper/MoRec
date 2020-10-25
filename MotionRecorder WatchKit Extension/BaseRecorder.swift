@@ -67,27 +67,42 @@ public class BaseRecorder: ObservableObject {
         }
         let timediff = deviceMotion.timestamp - firstTimestamp!
 
+        let attitude = Attitude(roll: deviceMotion.attitude.roll,
+                                pitch: deviceMotion.attitude.pitch,
+                                yaw: deviceMotion.attitude.yaw)
+
+        let rotationRate = RotationRate(x: deviceMotion.rotationRate.x,
+                                        y: deviceMotion.rotationRate.y,
+                                        z: deviceMotion.rotationRate.z)
+
         let gravity = Gravity(x: deviceMotion.gravity.x,
                               y: deviceMotion.gravity.y,
                               z: deviceMotion.gravity.z)
 
         let acceleration = Acceleration(x: deviceMotion.userAcceleration.x,
-                                 y: deviceMotion.userAcceleration.y,
-                                 z: deviceMotion.userAcceleration.z)
+                                        y: deviceMotion.userAcceleration.y,
+                                        z: deviceMotion.userAcceleration.z)
 
-        let motion = Motion(time: timediff, gravity: gravity, acceleration: acceleration)
+        let motion = Motion(time: timediff,
+                            attitude: attitude,
+                            rotationRate: rotationRate,
+                            gravity: gravity,
+                            acceleration: acceleration)
 
         os_log("Handle Device Motion for timestamp: %@", String(describing: motion.time))
         memoryBuffer.append(motion)
         DispatchQueue.main.async {
             self.recordedMotionEvents = self.memoryBuffer.count
         }
+        if let data = try? JSONEncoder().encode(motion) {
+            os_log("Sending motion to iPhone...")
+            transmitter.send(data)
+        }
     }
 
     private func logMovement() {
         let data = try? JSONEncoder().encode(memoryBuffer)
         if let data = data {
-            transmitter.send(data)
             print(String(data: data, encoding: .utf8) ?? "")
         }
     }

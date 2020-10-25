@@ -10,11 +10,11 @@ import WatchConnectivity
 import os.log
 
 final class Receiver: NSObject, ObservableObject {
-    @Published var motions = Array<Motion>()
-
     private var session = WCSession.default
+    private var appStore: AppStore
 
-    override init() {
+    init(appStore: AppStore) {
+        self.appStore = appStore
         super.init()
         if (WCSession.isSupported()) {
             session.delegate = self
@@ -38,10 +38,7 @@ extension Receiver: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         os_log("didReceiveMessage")
         if let jsonData = message["jsonData"] as? Data {
-            print(String(data: jsonData, encoding: .utf8) ?? "")
-            DispatchQueue.main.async {
-                self.motions = try! JSONDecoder().decode([Motion].self, from: jsonData)
-            }
+            appStore.appendMotion(motion: try! JSONDecoder().decode(Motion.self, from: jsonData))
         }
     }
 }

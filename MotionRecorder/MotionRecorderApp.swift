@@ -11,7 +11,9 @@ import SwiftUI
 struct MotionRecorderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let store = AppStore(appState: AppState(), reduce: reduce)
+            let receiver = Receiver(appStore: store)
+            ContentView().environmentObject(store).environmentObject(receiver)
         }
     }
 }
